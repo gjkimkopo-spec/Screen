@@ -1,0 +1,20 @@
+<html>
+<head>
+    <style>
+        .wave {
+            width: 300px;
+            height: auto;
+            display: block;
+            animation: wave 2s infinite linear;
+        }
+
+        @keyframes wave {
+            0%, 100% { clip-path: polygon(0% 50%, 10% 45%, 20% 55%, 30% 45%, 40% 50%, 50% 45%, 60% 55%, 70% 45%, 80% 50%, 90% 45%, 100% 50%, 100% 100%, 0% 100%); }
+            50% { clip-path: polygon(0% 45%, 10% 50%, 20% 45%, 30% 50%, 40% 45%, 50% 50%, 60% 45%, 70% 50%, 80% 45%, 90% 50%, 100% 45%, 100% 100%, 0% 100%); }
+        }
+    </style>
+</head>
+<body>
+    <img src="27.png" class="wave">
+</body>
+</html>

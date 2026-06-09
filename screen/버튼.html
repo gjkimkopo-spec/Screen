@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<h1> LED Control </h1>
+		<style>
+			#btn1{
+				width:10%;
+				height:5%;
+				background-color:yellow;
+				color:red;
+				font-size:2em;
+			}
+		</style>
+	</head>
+	<body>
+		<input id='btn1' type='button' value='on' onclick='led1_on();'>
+		<input id='btn1' type='button' value='off' onclick='led1_off();'>
+
+
+		<script>
+			function led1_on()
+			{
+				fetch('/LED=ON');
+			}
+		</script>
+	</body>
+</html>
